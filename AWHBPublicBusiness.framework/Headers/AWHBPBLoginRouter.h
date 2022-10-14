@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -50,12 +51,12 @@ typedef NS_ENUM(NSInteger, AWHBPBLoginRouterType) {
 /**
  * 用户登录 调用前需要设置对应的参数 setupLoginType:ip:port:userId:password:
  */
-+ (void)userLoginCallback:(void (^)(NSDictionary *requestDic))callBack;
++ (void)userLoginHudView:(UIView *)hudView callback:(void (^)(NSDictionary *requestDic))callBack;
 
 /**
  * 车辆登录 必须基础监控模块SDK AWHMonitoringModule 调用前需要设置对应的参数 setupLoginType:ip:port:userId:password:
  */
-+ (void)carLoginCallback:(void (^)(NSDictionary *requestDic))callBack;
++ (void)carLoginHudView:(UIView *)hudView callback:(void (^)(NSDictionary *requestDic))callBack;
 
 //车牌颜色
 + (void)plateColorRequest:(void (^)(NSArray *plateColorArr))callBack;
