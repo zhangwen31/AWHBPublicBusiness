@@ -18,6 +18,8 @@ typedef void(^AWHBPBSelectsTeamBlock)(NSString *string ,NSString *teamName);
 @property(nonatomic,strong)UILabel *teamNameLab;
 @property(nonatomic,strong)UILabel *numLab;
 @property(nonatomic,strong)UIButton *chooseBtn;
+//是否是单个选择车辆
+@property(nonatomic,assign)BOOL isSingle;
 @property(nonatomic,copy)AWHBPBSelectsTeamBlock SelectsTeamBlock;
 @end
 
