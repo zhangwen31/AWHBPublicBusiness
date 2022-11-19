@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIView *line1;
 @property (nonatomic, assign) BOOL isHiddenLine;
 @property (nonatomic, assign) BOOL isShowPhone;
+@property (nonatomic, assign) BOOL isCanCopy;
+//标题上边距固定
+@property (nonatomic, assign) BOOL isTopFixed;
 @property(nonatomic,assign)CGFloat detailRight;
 @property (nonatomic, copy) void (^phoneClick)(void);
 

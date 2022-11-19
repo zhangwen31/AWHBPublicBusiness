@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong,nonatomic)UILabel *addrL;
 @property (strong,nonatomic)UILabel *speedL;
 @property (strong,nonatomic)UILabel *preMileL;
+@property (assign,nonatomic)CGFloat firstMile;;
 @property (strong,nonatomic)AWHBBCarModel *model;
 @property (nonatomic, copy) void (^closeClick)(void);
 @end
