@@ -10,7 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^AWHBPBSelectCarModelBlock)(AWHBBCarModel *model);
 @interface AWHBPBSingleCarHistoryRecordView : UIView
+@property (nonatomic, assign) BOOL isVideo;
 @property(nonatomic,copy)AWHBPBSelectCarModelBlock SelectCarModelBlock;
+- (instancetype)initWithIsVideo:(BOOL)isVideo;
 @end
 
 NS_ASSUME_NONNULL_END

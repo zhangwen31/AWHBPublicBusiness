@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIView *line;
 @property(nonatomic,strong)UIImageView *pImageView;
 @property (nonatomic, assign) BOOL isHiddenLine;
+@property (nonatomic, assign) BOOL isHiddenRightLab;
+@property (nonatomic, assign) BOOL isHiddenRightImage;
 @property(nonatomic,assign)NSUInteger maxLength;
 //是否不能包含表情符
 @property(nonatomic,assign)BOOL isNoIncludeEmoticons;

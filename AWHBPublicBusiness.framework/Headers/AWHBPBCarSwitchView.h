@@ -12,6 +12,11 @@ typedef void(^ReturnCarSwitchBtnTitleBlock)(NSString *btnTitle, UIButton *sender
 @interface AWHBPBCarSwitchView : UIView
 /** */
 @property(nonatomic,copy)ReturnCarSwitchBtnTitleBlock ReturnCarSwitchBtnTitleBlock;
+
+@property(nonatomic,strong)NSString *carName;
+
+- (void)setupShowCarName:(BOOL)isShow;
+
 @end
 
 NS_ASSUME_NONNULL_END

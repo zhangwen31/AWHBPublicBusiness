@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** */
 @property(nonatomic,strong)NSMutableArray *dataArray;
 @property(nonatomic,strong)AWHBBCarModel *model;
+@property(nonatomic,assign)BOOL isNOCanPop;
 @end
 
 NS_ASSUME_NONNULL_END

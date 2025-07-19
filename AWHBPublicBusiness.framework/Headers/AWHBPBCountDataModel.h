@@ -22,6 +22,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy)NSString *mile;
 //定位数量
 @property(nonatomic,copy)NSString *gpsSize;
+//统计时长
+@property(nonatomic,copy)NSString *totalLong;
+//行驶均速
+@property(nonatomic,copy)NSString *avgMove;
 
 @end
 

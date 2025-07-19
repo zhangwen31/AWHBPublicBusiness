@@ -14,6 +14,7 @@ typedef void(^QueryMileageHeadCellBlock)(NSString *titleLabText);
 @property(nonatomic,strong)UITableView *tableView;
 @property (nonatomic, copy) NSString *plateName;
 @property(nonatomic,strong)UILabel *sliderValueLab;
+@property(nonatomic,strong)NSArray *canNoShowRightArr; //不显示右边箭头
 @property(nonatomic,strong)AWHBPBPZSlider * slider;
 @property(nonatomic,strong)UIButton *startBtn;
 @property (nonatomic, copy) QueryMileageHeadCellBlock QueryMileageHeadCellBlock;

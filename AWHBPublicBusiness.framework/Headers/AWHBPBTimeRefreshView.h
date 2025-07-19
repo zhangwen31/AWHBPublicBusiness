@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^SelectTimeBlock)(NSString *time);
 @interface AWHBPBTimeRefreshView : UIView
+@property(nonatomic,strong)NSString *time;
 @property(nonatomic,copy)SelectTimeBlock SelectTimeBlock;
 @property(nonatomic,copy)void(^closeClick)(void);
 @end

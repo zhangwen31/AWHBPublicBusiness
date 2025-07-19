@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AWHBPBCarDetailSignalViewController : AWHBBBaseViewController
 @property(nonatomic,strong)AWHBBCarModel *model;
+@property(nonatomic,assign)BOOL isNOCanPop;
 @end
 
 NS_ASSUME_NONNULL_END

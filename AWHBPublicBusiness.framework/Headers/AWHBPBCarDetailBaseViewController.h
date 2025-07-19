@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AWHBPBCarDetailBaseViewController : AWHBBBaseViewController
 @property(nonatomic,strong)AWHBBCarModel *model;
+@property(nonatomic,assign)BOOL isNOCanPop;
+- (void)getTeamNameRequest;
 @end
 
 NS_ASSUME_NONNULL_END

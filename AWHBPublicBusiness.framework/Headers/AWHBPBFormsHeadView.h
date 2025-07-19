@@ -18,6 +18,8 @@ typedef void(^ReturnSelectTitleBlock)(NSString *titleLabText);
 @property(nonatomic,assign)BOOL hidden;
 @property (nonatomic, copy) NSString *text;
 @property (nonatomic, copy) ReturnSelectTitleBlock ReturnSelectTitleBlock;
+/// 是否不展示第二行
+@property (nonatomic, assign) BOOL isNoSecRow;
 
 @end
 

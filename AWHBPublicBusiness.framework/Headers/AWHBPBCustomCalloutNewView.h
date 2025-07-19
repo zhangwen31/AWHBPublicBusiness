@@ -17,12 +17,31 @@ typedef void(^AWHBPBReturnBtnTitleBlock)(NSString *title, AWHBBCarModel *carMode
 @property (nonatomic, assign) BOOL isHiddenLocus;
 //隐藏跟踪
 @property (nonatomic, assign) BOOL isHiddenTrack;
+
 @property (nonatomic, assign) BOOL isPhoto;
+
+@property (nonatomic, assign) BOOL isNoCanPop;
+
 @property(nonatomic,copy)AWHBPBReturnBtnTitleBlock ReturnBtnTitleBlock;
+
+//是否开启对讲
+@property (nonatomic, assign, readonly) BOOL isStartIntercom;
+
+@property(nonatomic,strong) UINavigationController *navigationController;
+
++ (AWHBPBCustomCalloutNewView *)shareIsNoBottomSpace:(BOOL)isNoBottomSpace;
+
+- (void)setInformationIsNoBottomSpace:(BOOL)isNoBottomSpace;
+
 /**
  刷新信息列表
  */
 - (void)refreshInformation;
+/**
+ * 对讲
+ */
+- (void)intercomPlay;
+
 
 @end
 

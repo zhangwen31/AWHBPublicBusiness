@@ -16,6 +16,8 @@ typedef void(^ReturnBtnTitleBlock)(NSString *title);
 @property (nonatomic, assign) BOOL isHiddenLocus;
 //隐藏跟踪
 @property (nonatomic, assign) BOOL isHiddenTrack;
+//是否开启对讲
+@property (nonatomic, assign) BOOL isStartIntercom;
 
 @property (nonatomic, assign) BOOL isVideo;
 

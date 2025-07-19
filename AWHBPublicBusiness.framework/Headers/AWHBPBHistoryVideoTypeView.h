@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef void(^SelectBlock)(NSString *string,NSString *placeLabText);
+typedef void(^SelectBlock)(id string,NSString *placeLabText);
 @interface AWHBPBHistoryVideoTypeView : UIView<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)NSMutableArray *dataArray;

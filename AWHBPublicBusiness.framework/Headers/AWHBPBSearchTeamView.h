@@ -8,9 +8,9 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef void(^AWHBPBSelectTeamBlock)(NSString *string,NSString *teamIName);
+typedef void(^AWHBPBSearchTeamBlock)(NSString *string,NSString *teamIName);
 @interface AWHBPBSearchTeamView : UIView
-@property(nonatomic,copy)AWHBPBSelectTeamBlock selectTeamBlock;
+@property(nonatomic,copy)AWHBPBSearchTeamBlock selectTeamBlock;
 @end
 
 NS_ASSUME_NONNULL_END

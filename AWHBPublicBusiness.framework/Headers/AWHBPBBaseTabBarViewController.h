@@ -8,6 +8,9 @@
 #import <UIKit/UIKit.h>
 #import <AWHBPublicBusiness/AWHBPBMonomerMonitoringHeadView.h>
 #import <AWHBBasicBusiness/AWHBBCarModel.h>
+
+#define AWHBPBBaseTabBarCarDataRefresh     @"AWHBPBBaseTabBarCarDataRefresh"
+#define AWHBPBBaseTabBarCarDataChange       @"AWHBPBBaseTabBarCarDataChange"
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol AWHBPBTabrBarBackDelegate <UITabBarControllerDelegate>

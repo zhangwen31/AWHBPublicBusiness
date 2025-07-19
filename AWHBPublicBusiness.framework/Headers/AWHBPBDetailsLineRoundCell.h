@@ -1,0 +1,28 @@
+//
+//  AWHBPBDetailsLineRoundCell.h
+//  AWHBPublicBusiness
+//
+//  Created by 王恒 on 2025/6/22.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface AWHBPBDetailsLineRoundCell : UITableViewCell
+
+@property (nonatomic, strong) UILabel *detailTextLab;
+@property (nonatomic, strong) UILabel *titleLab;
+@property (nonatomic, strong) UIView *line1;
+@property (nonatomic, assign) BOOL isHiddenLine;
+@property (nonatomic, assign) BOOL isShowPhone;
+@property (nonatomic, assign) BOOL isCanCopy;
+@property (nonatomic, assign) BOOL isShowRightImage;
+//标题上边距固定
+@property (nonatomic, assign) BOOL isTopFixed;
+@property(nonatomic,assign)CGFloat detailRight;
+@property (nonatomic, copy) void (^phoneClick)(void);
+
+@end
+
+NS_ASSUME_NONNULL_END

@@ -30,13 +30,20 @@ typedef NS_ENUM(NSInteger, AWHBPBLoginRouterType) {
     AWHBPBLoginRouterTypeHumidityStatistics                 = 15,    // 湿度统计
     AWHBPBLoginRouterTypeLoadStatistics                     = 16,    // 载重统计
     AWHBPBLoginRouterTypeNewVehicles                        = 17,    // 新增车辆
+    AWHBPBLoginRouterTypeTrafficStatistics                  = 18,    // 行车统计
+    AWHBPBLoginRouterTypeDrivingState                       = 19,    // 行驶状态
+    AWHBPBLoginRouterTypeTirePressureReport                 = 20,    // 胎压报表
+    AWHBPBLoginRouterTypeRecentOilConsumption               = 21,    // 近期油耗
+    AWHBPBLoginRouterTypeForwardReverseStatistics           = 22,    // 正反转统计
+    AWHBPBLoginRouterTypeCostEntry                          = 23,    // 费用录入
+    AWHBPBLoginRouterTypeFleetAnalysis                      = 24,    // 车队分析
 };
 
 
 @interface AWHBPBLoginRouter : NSObject
 
 /**
- * 设置必须参数用于登录
+ * 设置必须参数用于登录 默认http
  * @param ip ip地址 必传
  * @param port 端口号 必传
  * @param userId 如果是用户登录输入用户名  如果是车辆登录输入车牌号 必传
@@ -45,6 +52,22 @@ typedef NS_ENUM(NSInteger, AWHBPBLoginRouterType) {
  */
 + (void)setupLoginIp:(NSString *)ip
                 port:(NSString *)port
+              userId:(NSString *)userId
+            password:(NSString *)password
+        plateColorId:(NSString *)plateColorId;
+
+/**
+ * 设置必须参数用于登录 默认http
+ * @param ip ip地址 必传
+ * @param port 端口号 必传
+ * @param isHttps 是否是https请求
+ * @param userId 如果是用户登录输入用户名  如果是车辆登录输入车牌号 必传
+ * @param password 密码 必传
+ * @param plateColorId 车辆颜色id，不必传，一般车辆登录的时候传
+ */
++ (void)setupLoginIp:(NSString *)ip
+                port:(NSString *)port
+             isHttps:(BOOL)isHttps
               userId:(NSString *)userId
             password:(NSString *)password
         plateColorId:(NSString *)plateColorId;

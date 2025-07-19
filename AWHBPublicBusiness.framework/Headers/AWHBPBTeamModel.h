@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AWHBPBTeamModel : NSObject
+
 @property(nonatomic,copy)NSString *pid;
 @property(nonatomic,copy)NSString *teamId;
 @property(nonatomic,copy)NSString *teamName;

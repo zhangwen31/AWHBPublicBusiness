@@ -10,12 +10,12 @@
 NS_ASSUME_NONNULL_BEGIN
 //代理传值地图车辆id
 @protocol AWHBPBTeamIdDelegate <NSObject>
-- (void)returnTeamId:(NSString *)teamId andTeamName:(NSString *)teamName;
+- (void)returnTeamId:(NSString *)teamId andTeamName:(NSString *)teamName carNum:(NSInteger)carNum;
 @end
 
 //代理传值地图车辆id
 @protocol AWHBPBCarIdTabOpinionDelegate <NSObject>
--(void)returnCarIdTabOpinion:(NSString *)tabOpinion andSelectCarId:(nonnull NSString *)carId andAllCarIdArray:(NSMutableArray *)allCarIdArr andAllCar:(nonnull NSMutableArray *)carArr andTeamName:(NSString *)teamName;
+-(void)returnCarIdTabOpinion:(NSString *)tabOpinion andSelectCarId:(nonnull NSString *)carId andAllCarIdArray:(NSMutableArray *)allCarIdArr andAllCar:(nonnull NSMutableArray *)carArr andTeamName:(NSString *)teamName carNum:(NSInteger)carNum;
 @end
 
 @interface AWHBPBSelectGroupCarViewController : AWHBBBaseViewController

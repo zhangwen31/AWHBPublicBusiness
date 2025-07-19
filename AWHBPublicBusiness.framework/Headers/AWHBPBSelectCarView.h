@@ -13,8 +13,10 @@ typedef void(^AWHBPBSelectCarBlock)(NSString *string,NSMutableArray *carIdArray,
 typedef void(^AWHBPBSelectCarModelBlock)(AWHBBCarModel *model);
 @interface AWHBPBSelectCarView : UIView
 @property(nonatomic,assign)BOOL isSingeCar;
+@property (nonatomic, assign) BOOL isVideo;
 @property(nonatomic,copy)AWHBPBSelectCarBlock SelectCarBlock;
 @property(nonatomic,copy)AWHBPBSelectCarModelBlock SelectCarModelBlock;
+- (instancetype)initWithIsVideo:(BOOL)isVideo;
 @end
 
 NS_ASSUME_NONNULL_END

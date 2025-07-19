@@ -20,6 +20,8 @@ typedef void(^AWHBPBSelectsTeamBlock)(NSString *string ,NSString *teamName);
 @property(nonatomic,strong)UIButton *chooseBtn;
 //是否是单个选择车辆
 @property(nonatomic,assign)BOOL isSingle;
+/// 是否没有权限
+@property(nonatomic,assign)BOOL noAuth;
 @property(nonatomic,copy)AWHBPBSelectsTeamBlock SelectsTeamBlock;
 @end
 

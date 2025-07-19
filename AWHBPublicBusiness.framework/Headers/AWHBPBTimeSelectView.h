@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy)void (^doneDidTouch)(NSInteger index,NSString *zcode);
 @property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) NSArray *titleArray;
+@property (nonatomic, assign) BOOL isShowTitle;
 @property (nonatomic,strong)UICollectionView *collectioinView;
 @end
 

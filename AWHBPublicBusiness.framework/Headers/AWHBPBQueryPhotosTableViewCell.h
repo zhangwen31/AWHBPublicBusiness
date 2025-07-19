@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIImageView *HisImageView;
 @property(nonatomic,strong)UILabel *dataLabel;
 @property(nonatomic,strong)UILabel *addrLabel;
+@property(nonatomic,strong)NSString *addStr;
 @end
 
 NS_ASSUME_NONNULL_END

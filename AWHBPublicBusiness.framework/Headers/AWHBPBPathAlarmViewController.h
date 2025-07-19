@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AWHBPBPathAlarmViewController : AWHBBBaseViewController
 @property(nonatomic,strong)NSMutableArray *alarmDataArray;
+@property(nonatomic,strong)NSString *carId;
 @end
 
 NS_ASSUME_NONNULL_END

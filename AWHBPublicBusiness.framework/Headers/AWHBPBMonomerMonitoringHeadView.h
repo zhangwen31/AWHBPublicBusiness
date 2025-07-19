@@ -6,15 +6,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AWHBPublicBusiness/AWHBPBSelectCarTypeView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^GetPlateBlock)(NSString *plate);
-typedef void(^EmptyPlateBlock)(void);
+typedef void(^AWHBPBGetPlateBlock)(AWHBPBSelectCarType type,NSString *plate);
+typedef void(^AWHBPBEmptyPlateBlock)(void);
+typedef void(^AWHBPBChangTypeBlock)(AWHBPBSelectCarType type);
 @interface AWHBPBMonomerMonitoringHeadView : UIView
 /** */
-@property(nonatomic,copy)GetPlateBlock GetPlateBlock;
-@property(nonatomic,copy)EmptyPlateBlock EmptyPlateBlock;
+@property(nonatomic,copy)AWHBPBGetPlateBlock GetPlateBlock;
+@property(nonatomic,copy)AWHBPBEmptyPlateBlock EmptyPlateBlock;
+@property(nonatomic,copy)AWHBPBChangTypeBlock changTypeBlock;
+@property(nonatomic,assign)AWHBPBSelectCarType type;
 @property(nonatomic,copy)void(^textDidBeginEditing)(void);
 /** */
 //@property(nonatomic,strong)UILabel *plateLab;

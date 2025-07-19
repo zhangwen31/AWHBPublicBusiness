@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AWHBPublicBusiness/AWHBPBAlarmAnnexDataModel.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy)NSString *speed;
 @property(nonatomic,copy)NSString *glng;//google经度
 @property(nonatomic,copy)NSString *glat;//google纬度
+@property(nonatomic,copy)NSString *lng;//google经度
+@property(nonatomic,copy)NSString *lat;//google纬度
+@property(nonatomic,strong)AWHBPBAlarmAnnexDataModel *annexDataModel;
 -(id)initWithDictionary:(NSDictionary *)dic;
 
 @end
