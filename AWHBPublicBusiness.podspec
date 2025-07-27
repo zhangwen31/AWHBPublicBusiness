@@ -145,7 +145,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  #s.resources = ['Resources/AWHBPublicBusinessLocalizable.bundle']
+  s.resources = ['AWHBoneResources.framework/AWHBPublicBusiness.bundle']
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"  #保存路径
 
