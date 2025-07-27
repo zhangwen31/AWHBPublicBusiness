@@ -5,7 +5,7 @@
 //  Created by 王恒 on 2024/3/9.
 //
 
-#import "AWHBBBaseViewController.h"
+#import <AWHBBasicBusiness/AWHBBBaseViewController.h>
 
 /** */
 @protocol AWHBPPasteCopiedContentDelegate <NSObject>
