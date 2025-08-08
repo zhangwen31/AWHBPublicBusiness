@@ -178,21 +178,7 @@ Pod::Spec.new do |s|
    s.requires_arc = true
    
    # 公共头文件导进组件.pch文件中,加入后，执行pod install, MXStatService-prefix.pch 文件中就有这些头文件
-   s.prefix_header_contents = <<-EOS
-   #import <AWHBoneRuntime/AWHBoneRuntime.h>
-   #import <AWHBoneRouter/AWHBoneRouter.h>
-   #import <AWHBNetworkRequest/AWHBNetworkRequest.h>
-   #import <AWHBBasicBusiness/AWHBBasicBusiness.h>
-   #import <MBProgressHUD/MBProgressHUD.h>
-   #import <Masonry/Masonry.h>
-   #import <MJExtension/MJExtension.h>
-   #import <SDWebImage/SDWebImage.h>
-   #import <YYModel/YYModel.h>
-   #import <AWHBoneResources/AWHBoneResources.h>
-   #import <IQKeyboardManager/IQKeyboardManager.h>
-   #import <AWHOilSwift/AWHOilSwift.h>
-   
-   EOS
+   s.prefix_header_file = 'AWHBPublicBusiness.framework/Headers/AWHBPublicBusiness-PrefixHeader.pch'
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
@@ -214,5 +200,8 @@ Pod::Spec.new do |s|
   s.dependency 'TZImagePickerController' # Full version with all features
   s.dependency 'TZImagePickerController/Basic' # No location code
   s.dependency 'SAMKeychain'
+  
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
