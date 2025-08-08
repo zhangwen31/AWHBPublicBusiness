@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AWHBPublicBusiness"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A short description of AWHBPublicBusiness."
 
   # This description is used to generate tags and improve search results.
@@ -178,19 +178,19 @@ Pod::Spec.new do |s|
    s.requires_arc = true
    
    # 公共头文件导进组件.pch文件中,加入后，执行pod install, MXStatService-prefix.pch 文件中就有这些头文件
-  s.prefix_header_contents = <<-EOS
-    #import <AWHBoneRuntime/AWHBoneRuntime.h>
-    #import <AWHBoneRouter/AWHBoneRouter.h>
-    #import <AWHBNetworkRequest/AWHBNetworkRequest.h>
-    #import <AWHBBasicBusiness/AWHBBasicBusiness.h>
-    #import <MBProgressHUD/MBProgressHUD.h>
-    #import <Masonry/Masonry.h>
-    #import <MJExtension/MJExtension.h>
-    #import <SDWebImage/SDWebImage.h>
-    #import <YYModel/YYModel.h>
-    #import <AWHBoneResources/AWHBoneResources.h>
-    #import <IQKeyboardManager/IQKeyboardManager.h>
-    #import <AWHOilSwift/AWHOilSwift.h>
+   s.prefix_header_contents = <<-EOS
+     #import <AWHBoneRuntime/AWHBoneRuntime.h>
+     #import <AWHBoneRouter/AWHBoneRouter.h>
+     #import <AWHBNetworkRequest/AWHBNetworkRequest.h>
+     #import <AWHBBasicBusiness/AWHBBasicBusiness.h>
+     #import <MBProgressHUD/MBProgressHUD.h>
+     #import <Masonry/Masonry.h>
+     #import <MJExtension/MJExtension.h>
+     #import <SDWebImage/SDWebImage.h>
+     #import <YYModel/YYModel.h>
+     #import <AWHBoneResources/AWHBoneResources.h>
+     #import <IQKeyboardManager/IQKeyboardManager.h>
+     #import <AWHOilSwift/AWHOilSwift.h>
    
    EOS
 
