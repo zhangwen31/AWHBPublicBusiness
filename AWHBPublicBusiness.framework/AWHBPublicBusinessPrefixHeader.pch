@@ -1,12 +1,12 @@
 //
-//  AWHBPublicBusiness-PrefixHeader.pch
+//  AWHBPublicBusinessPrefixHeader.pch.pch
 //  AWHBPublicBusiness
 //
 //  Created by 王恒 on 2024/5/4.
 //
 
-#ifndef AWHBPublicBusiness_PrefixHeader_pch
-#define AWHBPublicBusiness_PrefixHeader_pch
+#ifndef AWHBPublicBusinessPrefixHeader_pch
+#define AWHBPublicBusinessPrefixHeader_pch
 
 #import <AWHBoneRuntime/AWHBoneRuntime.h>
 #import <AWHBoneRouter/AWHBoneRouter.h>
