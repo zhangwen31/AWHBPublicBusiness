@@ -1,6 +1,0 @@
-framework module AWHBPublicBusiness {
-  umbrella header "AWHBPublicBusiness.h"
-  export *
-
-  module * { export * }
-}
