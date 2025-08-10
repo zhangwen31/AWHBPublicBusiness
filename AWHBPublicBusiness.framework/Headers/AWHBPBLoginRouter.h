@@ -30,13 +30,8 @@ typedef NS_ENUM(NSInteger, AWHBPBLoginRouterType) {
     AWHBPBLoginRouterTypeHumidityStatistics                 = 15,    // 湿度统计
     AWHBPBLoginRouterTypeLoadStatistics                     = 16,    // 载重统计
     AWHBPBLoginRouterTypeNewVehicles                        = 17,    // 新增车辆
-    AWHBPBLoginRouterTypeTrafficStatistics                  = 18,    // 行车统计
-    AWHBPBLoginRouterTypeDrivingState                       = 19,    // 行驶状态
-    AWHBPBLoginRouterTypeTirePressureReport                 = 20,    // 胎压报表
-    AWHBPBLoginRouterTypeRecentOilConsumption               = 21,    // 近期油耗
-    AWHBPBLoginRouterTypeForwardReverseStatistics           = 22,    // 正反转统计
-    AWHBPBLoginRouterTypeCostEntry                          = 23,    // 费用录入
-    AWHBPBLoginRouterTypeFleetAnalysis                      = 24,    // 车队分析
+    AWHBPBLoginRouterTypeBikeTracking                       = 18,    // 单车跟踪
+    AWHBPBLoginRouterTypeRecentOilConsumption               = 19,    // 近期油耗
 };
 
 
