@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AWHBPublicBusiness"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "A short description of AWHBPublicBusiness."
 
   # This description is used to generate tags and improve search results.
@@ -145,7 +145,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = ['AWHBoneResources.framework/AWHBPublicBusinessLocalizable.bundle']
+  #s.resources = ['AWHBoneResources.framework/AWHBPublicBusinessLocalizable.bundle']
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"  #保存路径
 

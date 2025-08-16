@@ -10,9 +10,9 @@
 
 @interface AWHBPBMLAlbumListTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *albumTitleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *albumDetailLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *coverImageView;
+@property (strong, nonatomic) UILabel *albumTitleLabel;
+@property (strong, nonatomic) UILabel *albumDetailLabel;
+@property (strong, nonatomic) UIImageView *coverImageView;
 
 
 
