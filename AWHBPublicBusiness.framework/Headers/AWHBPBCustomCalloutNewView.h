@@ -22,6 +22,8 @@ typedef void(^AWHBPBReturnBtnTitleBlock)(NSString *title, AWHBBCarModel *carMode
 
 @property (nonatomic, assign) BOOL isNoCanPop;
 
+@property (nonatomic, assign) CGFloat maxWidth;
+
 @property(nonatomic,copy)AWHBPBReturnBtnTitleBlock ReturnBtnTitleBlock;
 
 //是否开启对讲
