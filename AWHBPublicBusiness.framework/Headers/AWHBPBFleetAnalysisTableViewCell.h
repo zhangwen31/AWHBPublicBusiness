@@ -13,8 +13,6 @@ typedef void(^AWHBPBFleetAnalysisSelectsTeamBlock)(AWHBPBTeamNewModel *model);
 @interface AWHBPBFleetAnalysisTableViewCell : UITableViewCell
 @property(nonatomic,strong)AWHBPBTeamNewModel *model;
 @property(nonatomic,strong)AWHBBCarModel *carModel;
-@property(nonatomic,strong)UIView *showView;
-@property(nonatomic,strong)UIImageView *carImageView;
 @property(nonatomic,strong)UILabel *teamNameLab;
 @property(nonatomic,strong)UILabel *numLab;
 @property(nonatomic,strong)UILabel *onlineNumLab;

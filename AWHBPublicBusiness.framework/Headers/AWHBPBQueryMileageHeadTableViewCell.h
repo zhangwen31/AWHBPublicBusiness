@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^ReturnTextFieldTextBlock)(NSString *textFieldText);
-@interface AWHBPBQueryMileageHeadTableViewCell : UITableViewCell
+@interface AWHBPBQueryMileageHeadTableViewCell : AWHBBBTableViewCell
 @property (nonatomic, strong) UIView *backView;
 @property(nonatomic,strong)UILabel *titleTextLab;
 @property(nonatomic,strong)UILabel *detailTextLab;

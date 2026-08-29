@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^NavBtnBlock)(NSString *str);
-@interface AWHBPBMapRimListTableViewCell : UITableViewCell
+@interface AWHBPBMapRimListTableViewCell : AWHBBBTableViewCell
 @property(strong,nonatomic)UILabel *nameLab;
 @property(strong,nonatomic)UILabel *addrLab;
 @property(strong,nonatomic)UILabel *mileLab;

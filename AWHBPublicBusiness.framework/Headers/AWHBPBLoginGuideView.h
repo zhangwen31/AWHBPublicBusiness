@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AWHBPBLoginGuideView : UIView
+@interface AWHBPBLoginGuideView : AWHBBBFontChangeView
 
 @property (nonatomic, strong) NSArray *imageNameArr;
 

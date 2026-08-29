@@ -1,0 +1,20 @@
+//
+//  AWHBPBTripAnalysisAddressNewView.h
+//  AWHBPublicBusiness
+//
+//  Created by 王恒 on 2025/10/25.
+//
+
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface AWHBPBTripAnalysisAddressNewView : UIView
+
+@property (nonatomic, strong) UILabel *timeLabel;
+
+@property (nonatomic, strong) UILabel *addressLabel;
+
+@end
+
+NS_ASSUME_NONNULL_END

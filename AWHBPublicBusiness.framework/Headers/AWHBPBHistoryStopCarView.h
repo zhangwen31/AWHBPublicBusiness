@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)refreshDataHeight;
 
+- (void)setSelectNum:(NSInteger)selectNum;
+
 @end
 
 NS_ASSUME_NONNULL_END

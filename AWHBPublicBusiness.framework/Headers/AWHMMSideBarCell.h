@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UILabel *rightLab;
 @property(nonatomic,strong)UIImageView *rightImgView;
 @property(nonatomic,assign)BOOL isHiddenRightImg;
+@property (nonatomic, assign) BOOL isHiddenLine;
 
 @end
 

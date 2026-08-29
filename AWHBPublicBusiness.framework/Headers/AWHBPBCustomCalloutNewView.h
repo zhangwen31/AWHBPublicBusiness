@@ -24,10 +24,11 @@ typedef void(^AWHBPBReturnBtnTitleBlock)(NSString *title, AWHBBCarModel *carMode
 
 @property (nonatomic, assign) CGFloat maxWidth;
 
-@property(nonatomic,copy)AWHBPBReturnBtnTitleBlock ReturnBtnTitleBlock;
-
-//是否开启对讲
 @property (nonatomic, assign, readonly) BOOL isStartIntercom;
+//是否不使用对讲
+@property (nonatomic, assign) BOOL isNoUseIntercom;
+
+@property(nonatomic,copy)AWHBPBReturnBtnTitleBlock ReturnBtnTitleBlock;
 
 @property(nonatomic,strong) UINavigationController *navigationController;
 
@@ -39,6 +40,7 @@ typedef void(^AWHBPBReturnBtnTitleBlock)(NSString *title, AWHBBCarModel *carMode
  刷新信息列表
  */
 - (void)refreshInformation;
+
 /**
  * 对讲
  */

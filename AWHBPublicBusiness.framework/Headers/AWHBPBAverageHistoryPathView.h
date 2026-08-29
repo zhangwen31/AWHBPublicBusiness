@@ -16,7 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) void (^selectCarModelBlock)(AWHBBCarModel *model);
 
+@property (nonatomic, copy) void (^changeFilterBlock)(NSString *speed, NSString *stopTime);
+
 -(void)getCarModel:(AWHBBCarModel *)model canSelectCar:(BOOL)canSelectCar;
+//修改过滤定位
+- (void)changeFilterWithSpeed:(NSString *)speed stopTime:(NSString *)stopTime;
 
 @end
 

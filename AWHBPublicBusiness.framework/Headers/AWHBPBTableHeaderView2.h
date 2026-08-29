@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^SelectBtn)(UIButton *button);
-@interface AWHBPBTableHeaderView2 : UITableViewHeaderFooterView
+@interface AWHBPBTableHeaderView2 : AWHBBBHeaderFooterView
 @property(nonatomic,strong)UILabel *numLabel;
 @property(nonatomic, copy)SelectBtn SelectBtn;
 @property(nonatomic, strong)UIButton *button;

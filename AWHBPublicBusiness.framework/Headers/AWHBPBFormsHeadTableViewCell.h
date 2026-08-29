@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AWHBPBFormsHeadTableViewCell : UITableViewCell
+@interface AWHBPBFormsHeadTableViewCell : AWHBBBTableViewCell
 @property(nonatomic,strong)UILabel *titleLab;
 @property(nonatomic,strong)UILabel *detailLab;
 @property(nonatomic,strong)UITextField *detailText;

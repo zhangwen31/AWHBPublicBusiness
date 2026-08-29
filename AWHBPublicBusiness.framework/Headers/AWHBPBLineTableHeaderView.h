@@ -17,6 +17,7 @@ typedef void(^AWHBPBLineSelectBtn2)(UIButton *button);
 @property(nonatomic, strong)UIButton *button;
 @property(nonatomic, strong)UIButton *button2;
 @property(nonatomic, strong)UIImageView *pzImageView;
+@property (nonatomic, strong, readonly) UIView *bottomView;
 @end
 
 NS_ASSUME_NONNULL_END

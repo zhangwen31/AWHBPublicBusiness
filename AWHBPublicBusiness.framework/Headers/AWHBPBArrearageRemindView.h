@@ -8,16 +8,29 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef void(^AWHBPBRemindBlock)(NSString *string);
+typedef void(^AWHBPBRemindBlock)();
 
 @interface AWHBPBArrearageRemindView : UIView
 
-/** */
-@property(nonatomic,strong)UILabel *headLab;
-@property(nonatomic,strong)UITextView *titleLab;
-@property(nonatomic,strong)UIButton *cancleBtn;
-@property(nonatomic,strong)UIButton *sureBtn;
 @property(nonatomic,copy)AWHBPBRemindBlock RemindBlock;
+
+@property (nonatomic, strong, readonly) UILabel *titleLabel;
+
+@property (nonatomic, strong, readonly) UILabel *subTitleLabel;
+
+@property (nonatomic, strong, readonly) UILabel *functionLab;
+
+@property (nonatomic, strong, readonly) UITextView *contentTextView;
+
+@property (nonatomic, strong, readonly) UIButton *closeBut;
+
+@property (nonatomic, strong, readonly) UIButton *sureBut;
+
+@property (nonatomic, copy) void (^closeClick)(void);
+
+- (void)setupTitle:(NSString *)title changeTitle:(NSString *)changeTitle;
+
+- (void)closeButAction;
 
 @end
 

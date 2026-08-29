@@ -17,6 +17,8 @@ typedef void(^AWHBPBSelectTeamNewBlock)(NSString *string,NSString *teamIName,NSI
 @property(nonatomic,assign)BOOL isNewAdd;
 //是否是修改车辆功能选择车队
 @property(nonatomic,assign)BOOL isChangeCar;
+/// 是否过滤无权限车队
+@property(nonatomic,assign)BOOL isFilterNoAuth;
 @end
 
 NS_ASSUME_NONNULL_END

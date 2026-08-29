@@ -21,8 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,weak)id<AWHBPPasteCopiedContentDelegate>delegate;
 @property (nonatomic,strong)UIImage *rightImage;
 @property (nonatomic,assign)BOOL isShowRight;
-//是否不支持缩放
+///是否不支持缩放
 @property (nonatomic,assign)BOOL isNoZooming;
+/// 禁止页面滑出边界
+@property (nonatomic,assign)BOOL isNoPageScrollingOutBounds;
 //是否不支持滑动返回 默认支持
 @property(nonatomic,assign)BOOL allowsNoBackForwardNavigationGestures;
 - (void)setupWebViewBottom:(CGFloat)bottom;

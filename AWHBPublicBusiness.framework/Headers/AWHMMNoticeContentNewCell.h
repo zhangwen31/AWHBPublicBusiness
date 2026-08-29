@@ -11,14 +11,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^AWHMMReturnUrlBlock)(NSString *str);
 @interface AWHMMNoticeContentNewCell : UIView
-//通知
-@property(nonatomic,strong)UILabel *headLab;
 @property(nonatomic,strong)UILabel *headTitleLab;
 @property(nonatomic,strong)UITextView *titleTextView;
 @property (nonatomic, strong) UIView *downView;
 @property(nonatomic,strong)UIButton *downBtn;
 @property(nonatomic,strong)UILabel *downBtnLab;
 @property(nonatomic,strong)NSString *fileType;
+@property(nonatomic,assign)BOOL isShowDownView;
 /** */
 @property(nonatomic,copy)AWHMMReturnUrlBlock ReturnUrlBlock;
 

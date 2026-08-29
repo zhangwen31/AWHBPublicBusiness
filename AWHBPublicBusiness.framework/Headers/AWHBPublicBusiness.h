@@ -156,3 +156,8 @@ FOUNDATION_EXPORT const unsigned char AWHBPublicBusinessVersionString[];
 #import <AWHBPublicBusiness/AWHBPBLoginRouter.h>
 #import <AWHBPublicBusiness/AWHBPBDragView.h>
 #import <AWHBPublicBusiness/AWHBPBFunctionSelectView.h>
+#import <AWHBPublicBusiness/AWHBPBSelectImageView.h>
+#import <AWHBPublicBusiness/AWHBPBTripAnalysisViewController.h>
+#import <AWHBPublicBusiness/AWHBPBGroupMonitoringViewController.h>
+#import <AWHBPublicBusiness/AWHBPBGroupVideoCallViewController.h>
+#import <AWHBPublicBusiness/AWHBPBConfirmationPromptBoxView.h>

@@ -21,6 +21,8 @@ typedef void(^ReturnBtnTitleBlock)(NSString *title);
 //是否不使用视频
 @property (nonatomic, assign) BOOL isNoUseVideo;
 
+@property (nonatomic, assign) CGFloat maxWidth;
+
 - (void)reloadData;
 
 @end

@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy)NSString *startAddr;
 @property(nonatomic,copy)NSString *endAddr;
 @property(nonatomic,copy)NSString *startEndTime;
+@property(nonatomic,copy) void (^selectFunctionBlock)(NSString *name);
+- (CGFloat)getHeight;
 @end
 
 NS_ASSUME_NONNULL_END

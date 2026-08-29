@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign)CGFloat mile;
 @property(nonatomic,copy)NSString *saddr;
 @property(nonatomic,copy)NSString *slng;
+@property(nonatomic,copy)NSString *slat;
 @property(nonatomic,copy)NSString *stime;
 @property(nonatomic,assign)CGFloat smile;
 -(id)initWithDictionary:(NSDictionary *)dic;

@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *filterAppend;//过滤补报
 @property(nonatomic,copy)NSString *speedThreshold;//速度阈值
 @property(nonatomic,copy)NSString *parkingThreshold;//停车阈值
+@property (nonatomic, copy) void (^changeFilterBlock)(NSString *speed, NSString *stopTime);
 
 @end
 

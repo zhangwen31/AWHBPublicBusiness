@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^AWHMMReturnUrlBlock)(NSString *urlStr);
 @interface AWHMMNoticeNewView : UIView
 
+@property (nonatomic, strong, readonly) UILabel *titleLabel;
 @property(nonatomic,strong)UIScrollView *scrollView;
 @property(nonatomic,strong)NSMutableArray *dataArray;
 @property(nonatomic,strong)NSMutableSet *readSet;
@@ -20,6 +21,12 @@ typedef void(^AWHMMReturnUrlBlock)(NSString *urlStr);
 @property(nonatomic,copy)AWHMMReturnUrlBlock ReturnUrlBlock;
 @property(nonatomic,copy)void(^closeClick)(void);
 @property(nonatomic,copy)void(^readNoticeBlock)(id model);
+
+@property (nonatomic, strong, readonly) UIButton *closeBut;
+
+- (void)setupTitle:(NSString *)title changeTitle:(NSString *)changeTitle;
+
+- (void)closeButAction;
 
 @end
 
