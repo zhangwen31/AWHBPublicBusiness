@@ -32,6 +32,7 @@ typedef NS_ENUM(NSInteger, AWHBPBLoginRouterType) {
     AWHBPBLoginRouterTypeNewVehicles                        = 17,    // 新增车辆
     AWHBPBLoginRouterTypeBikeTracking                       = 18,    // 单车跟踪
     AWHBPBLoginRouterTypeRecentOilConsumption               = 19,    // 近期油耗
+    AWHBPBLoginRouterTypeSystemSetup                        = 20,    // 系统设置
 };
 
 
@@ -87,6 +88,13 @@ typedef NS_ENUM(NSInteger, AWHBPBLoginRouterType) {
  * @param routerType 需要跳转的界面
  */
 + (void)goToViewController:(AWHBPBLoginRouterType)routerType;
+/**
+ * 调整对应界面
+ * @param routerType 需要跳转的界面
+ * @param navigationController 当前界面开始跳转的navigationController
+ */
++ (void)goToViewController:(AWHBPBLoginRouterType)routerType
+        navigationController:(UINavigationController *)navigationController;
 
 @end
 
