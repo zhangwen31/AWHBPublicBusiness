@@ -8524,6 +8524,10 @@
 		<data>
 		GVL2Bh0EppFQiuYjz8p9KiwdbrY=
 		</data>
+		<key>Headers/AWHBPBCustomizedSharingView.h</key>
+		<data>
+		ZDVU2uO/LxsjbUAu1GVZgro5Nx0=
+		</data>
 		<key>Headers/AWHBPBDayListView.h</key>
 		<data>
 		LVxv5VP/5NVSf8kUaPhvv36tcEU=
@@ -24703,6 +24707,13 @@
 			<key>hash2</key>
 			<data>
 			0GEakS9a12cSMk1qWYrk7eRfv2La3RPw3m9KnzdTId8=
+			</data>
+		</dict>
+		<key>Headers/AWHBPBCustomizedSharingView.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LeobBgwut/CDiZHB/bIgWmmlT+zqlWfGayfujUXCZqo=
 			</data>
 		</dict>
 		<key>Headers/AWHBPBDayListView.h</key>
